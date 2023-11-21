@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket</title>
+    <link rel="stylesheet" href="Rocket.css">
+</head>
+<body class="body-state1">
+        <div class="left">
+            <div class="interface state1">
+            <h1>Rocket Lunch Screen</h1>
+            <a href="#" class="button" onclick="ChangeState(2);">For Lunch Press Here</a>
+            </div>
+            <div class="interface state2">
+                <h1 id="countdown">10</h1>
+                <a href="#" class="button" onclick="ChangeState(1);">Abort</a>
+            </div>
+            <div class="interface state3">
+                <h1 id="Lift Off">Lift Off</h1>
+            </div>
+            <div class="interface state4">
+                <h1 id="Well Done">Well Done</h1>
+                <a href="#" class="button" onclick="ChangeState(1);">Lunch Again</a>
+            </div>
+            <div class="interface state5">
+                <h1 id="Oh Shit">Oh NO!!!</h1>
+                <a href="#" class="button" onclick="ChangeState(1);">Try Again</a>
+            </div>
+        
+        <div class="right">
+            <div class="ground"></div>
+            <div class="rocket"></div>
+            <div class="nervous" id="nervous"></div>
+            <div class="cant-wait" id="cant-wait"></div>
+        </div>
+        <audio src="We Are Alive Sid.mp3" id="ALIVE"></audio>
+        
+    <script src="Rocket.js"></script>
+</body>
+</html>

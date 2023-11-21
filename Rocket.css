@@ -1,0 +1,147 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body-state1, 
+.body-state2, 
+.body-state3,
+.body-state4,
+.body-state5 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.left {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(93, 182, 152);
+    left: 0;
+    top: 0;
+    
+}
+
+.right {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top:0;
+    
+    
+/* for space background */
+}
+
+.rocket {
+    position: absolute;
+    
+    left: 50%;
+    bottom: 20px;
+    width: 217px;
+    height: 272px;
+    margin-left: -64px;
+    background: url(rocket-state1.png)no-repeat ;
+    transition: bottom 3s;
+
+}
+
+.ground {
+    position: absolute;
+    bottom: 20px;
+    height: 30px;
+    width: 100%;
+    background-image: url(ground.png);
+}
+
+.body-state1 .rocket {
+    transition: none;
+}
+
+.body-state2 .rocket {
+    background-image: url(rocket-state2.gif);
+}
+
+
+.body-state3 .rocket,
+.body-state4 .rocket {
+    bottom: 1000px;
+    background-image: url(rocket-state3.gif);
+}
+
+.body-state5 .rocket {
+    
+    background-image: url(boom.png);
+}
+
+
+
+.nervous {
+    position: absolute;
+    top: 310px;
+    left: 160px;
+    background: url(nervous.png) no-repeat 0 0 ;
+    width: 223px;
+    height: 100px;
+    display: none;
+}
+
+.cant-wait {
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    background: url(cant-wait.png) no-repeat 0 0 ;
+    width: 223px;
+    height: 100px;
+    display: none;
+    
+}
+
+.nervous.show,
+.cant-wait.show {
+    display: block;
+}
+
+
+
+
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5 {
+    display: none;
+}
+
+body.body-state1 .state1 {display: block;}
+body.body-state2 .state2 {display: block;}
+body.body-state3 .state3 {display: block;}
+body.body-state4 .state4 {display: block;}
+body.body-state5 .state5 {display: block;}
+
+
+.interface {
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    margin-top: 15%;
+}
+
+
+
+a.button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 30px 50px;
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: color 300ms;
+}
+
+a:hover{
+    background-color: rgb(212, 90, 90);
+    color: white;
+}
+
